@@ -1,2 +1,2 @@
 # BACS-200
-University of Northern Colorado - BACS 200 - Intro to Web Development
+University of Northern Colorado - BACS495-007 Web Des & Dev for Programmers
