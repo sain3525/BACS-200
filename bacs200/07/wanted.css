@@ -13,7 +13,7 @@ body {
 
 header {
     border: solid 3px black;
-    border-radius: 10px 10px / 10px 10px;
+    border-radius: 10px;
     background-color: gainsboro;
     margin-bottom: inherit;
 }
@@ -28,7 +28,7 @@ footer {
 main {
     border: solid 3px black;
     background-color: lightgoldenrodyellow;
-    border-radius: 10px 10px / 10px 10px;
+    border-radius: 10px;
 }
 
 h1 {
