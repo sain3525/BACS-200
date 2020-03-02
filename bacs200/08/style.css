@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+}
+
+main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+}
+
+section {
+    flex: 1;
+}
+
+nav,
+aside {
+    flex: 0 0 20vw;
+    background: beige;
+}
+
+nav {
+    order: -1;
+}
+
+header,
+footer,
+section,
+nav,
+aside {
+    padding: 1em;
+}
+
+header,
+footer {
+    background: midnightblue;
+    height: 16vh;
+    text-align: center;
+    color: aliceblue;
+}
