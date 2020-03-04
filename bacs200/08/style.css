@@ -8,35 +8,109 @@ body {
 
 main {
     display: flex;
-    min-height: calc(100vh - 40vh);
+    min-height: calc(120vh - 40vh);
+    background-color: #444;
+    color: aliceblue;
 }
 
 section {
     flex: 1;
 }
 
-nav,
-aside {
-    flex: 0 0 20vw;
-    background: beige;
-}
-
-nav {
-    order: -1;
-}
-
 header,
 footer,
-section,
-nav,
-aside {
-    padding: 1em;
+section {
+    padding: 1px;
 }
 
-header,
-footer {
-    background: midnightblue;
-    height: 16vh;
+header {
+    background: powderblue;
     text-align: center;
     color: aliceblue;
+}
+
+footer {
+    background: #444;
+    height: 6vh;
+    text-align: center;
+    color: powderblue;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    list-style: none;
+}
+
+.menu-item {
+    background: #444;
+    padding: 1em 0.5em;
+    position: relative;
+    border-bottom: 5px solid midnightblue;
+    margin: 0 2px;
+    transition: border-bottom 0.23s ease-in-out, background 0.23s linear;
+    cursor: pointer;
+    min-width: 8em;
+    text-align: center;
+}
+
+.menu-item[aria-haspopup="true"] {
+    border-bottom-color: midnightblue;
+}
+
+.menu-item:hover,
+.menu-item:focus-within {
+    border-bottom-color: powderblue;
+    background: aliceblue;
+}
+
+.menu-item:hover .sub-menu,
+.menu-item:hover .sub-menu:hover,
+.menu-item:focus-within .sub-menu,
+.menu-item:focus-within .sub-menu:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+
+.sub-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    margin-top: 1em;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.sub-menu .menu-item {
+    margin: 0.1em 0;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+    z-index: 2;
+}
+
+nav a {
+    color: powderblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer a {
+    text-decoration: underline;
+    color: aliceblue
 }
