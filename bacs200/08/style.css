@@ -7,7 +7,6 @@ body {
 }
 
 main {
-
     min-height: calc(121vh - 40vh);
     background-color: #444;
     color: aliceblue;
@@ -27,6 +26,7 @@ header {
     background: powderblue;
     text-align: center;
     color: aliceblue;
+    border-bottom: 2px solid midnightblue;
 }
 
 footer {
@@ -57,10 +57,10 @@ ol {
 
 .menu-item {
     background: #444;
-    padding: 1em 0.5em;
+    padding: 1em 0.8em;
     position: relative;
-    border-bottom: 5px solid midnightblue;
-    margin: 0 2px;
+    border-bottom: 5px solid aliceblue;
+    margin: 0 3px;
     transition: border-bottom 0.23s ease-in-out, background 0.23s linear;
     cursor: pointer;
     min-width: 8em;
@@ -117,7 +117,6 @@ footer a {
 }
 
 main nav {
-    margin: 10px;
     float: left;
     background-color: inherit;
     text-align: center;
@@ -125,27 +124,68 @@ main nav {
 
 main nav ul {
     list-style-type: none;
+    padding: 0px;
 }
 
 main nav ul li {
     padding: 1em;
     width: 220px;
     margin: 10px;
-    background-color: lightblue;
-    box-shadow: 2px 2px 5px gray;
+    background-color: #444;
+    box-shadow: 2px 2px 4px gray;
     text-decoration: none;
     text-transform: uppercase;
+    border-bottom: 5px solid midnightblue;
+    transition: border-bottom 0.23s ease-in-out, background 0.23s linear;
+}
+
+main nav ul li:hover,
+main nav ul li:focus-within {
+    border-bottom-color: powderblue;
+    background: aliceblue;
+    color: red;
+}
+
+main nav ul li:hover a {
+    color: lightblue;
+}
+
+main a:visited {
+    color: lightblue;
+}
+
+main a:link {
+    text-decoration-line: none;
+    font-weight: bold;
     color: aliceblue;
+}
+
+a:active {
+    color: midnightblue;
 }
 
 .centered {
     text-align: center;
+    position: relative;
 }
 
 .none {
     text-align: end;
     margin-right: 30px;
-    position: relative; top: -130px;
-    
-    
+    float: right;
+    position: relative;
+    top: 9px;
+    border: 2px solid lightblue;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+hr {
+    border: 1px solid midnightblue;
+}
+.h2 {
+    text-decoration-line: underline;
+    color: lightblue;
 }

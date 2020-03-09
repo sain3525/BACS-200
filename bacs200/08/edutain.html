@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="site.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <style>
         h1 {
             text-align: center;
@@ -29,90 +29,116 @@
 <body>
     <header>
         <h1>Educate and Entertain</h1>
-        <h2 style="text-decoration: underline">TED Talks</h2>
+        <nav class="menu">
+            <ol>
+                <li class="menu-item"><a href="..">Home</a></li>
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="#0">My Projects</a>
+                    <ol class="sub-menu" aria-label="submenu">
+                        <li class="menu-item"><a href="blog.html">WordPress Blog</a></li>
+                        <li class="menu-item"><a href="inspire.html">Inspire Me</a></li>
+                        <li class="menu-item"><a href="amuse.html">Amuse Me</a></li>
+                        <li class="menu-item"><a href="template.html">Development Skills</a></li>
+                        <li class="menu-item"><a href="edutain.html">Educate & Entertain</a></li>
+                        <li class="menu-item"><a href="video.html">Video & YouTube</a></li>
+                        <li class="menu-item"><a href="wanted.html">Cascading Stylesheets</a></li>
+                        <li class="menu-item"><a href="index.html">Page Structure</a></li>
+                    </ol>
+                </li>
+                <li class="menu-item"><a href="https://github.com/sain3525/BACS-200">My Github</a></li>
+                <li class="menu-item"><a href="https://www.unco.edu/canvas/">My Canvas</a></li>
+            </ol>
+        </nav>
     </header>
+    <main>
+        <h2 class="h2">TED Talks</h2>
+        <table>
+            <tr>
+                <th>Title & Speaker</th>
+                <th>TED Talk Videos</th>
+                <th>Video Summary</th>
+            </tr>
+            <tr>
+                <td>
+                    Adam Carroll - When money isn't real: the $10,000 experiment
+                </td>
+                <td>
+                    <iframe width="600" height="350" src="https://www.youtube.com/embed/_VB39Jo8mAQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>Adam Carroll talks about his $10,000 Monopoly game with his kids and how to teach finance management in a cashless society.</td>
+            </tr>
 
-    <table>
-        <tr>
-            <th>Title & Speaker</th>
-            <th>TED Talk Videos</th>
-            <th>Video Summary</th>
-        </tr>
-        <tr>
-            <td>
-                Adam Carroll - When money isn't real: the $10,000 experiment
-            </td>
-            <td>
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/_VB39Jo8mAQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>Adam Carroll talks about his $10,000 Monopoly game with his kids and how to teach finance management in a cashless society.</td>
-        </tr>
+            <tr>
+                <td>
+                    Kyle MacDonald - What if you could trade a paperclip for a house?
+                </td>
+                <td>
+                    <iframe width="600" height="350" src="https://www.youtube.com/embed/8s3bdVxuFBs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>
+                    Kyle MacDonald details just exactly how he traded up from one red paperclip to a house, in only a year! Kyle MacDonald started with a red paperclip and traded it for a pen. Then traded the pen for a doorknob. And so on! It's an unlikely and amazing journey with lots of surprises along the way.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Femi Ogunjinmi - How To Tell If Someone Truly Loves You
+                </td>
+                <td>
+                    <iframe width="600" height="350" src="https://www.youtube.com/embed/44J3FGYKltI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>
+                    Is proclaiming your love for someone truly enough? Femi Ogunjinmi brings to light what fully constitutes an enduring, fulfilling relationship through his engaging experiences.
+                </td>
+            </tr>
+        </table>
 
-        <tr>
-            <td>
-                Kyle MacDonald - What if you could trade a paperclip for a house?
-            </td>
-            <td>
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/8s3bdVxuFBs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                Kyle MacDonald details just exactly how he traded up from one red paperclip to a house, in only a year! Kyle MacDonald started with a red paperclip and traded it for a pen. Then traded the pen for a doorknob. And so on! It's an unlikely and amazing journey with lots of surprises along the way.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Femi Ogunjinmi - How To Tell If Someone Truly Loves You
-            </td>
-            <td>
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/44J3FGYKltI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                Is proclaiming your love for someone truly enough? Femi Ogunjinmi brings to light what fully constitutes an enduring, fulfilling relationship through his engaging experiences.
-            </td>
-        </tr>
-    </table>
+        <hr>
 
-    <h2 style="text-decoration: underline">RSA Animate</h2>
-
-    <table>
-        <tr>
-            <th>Title & Speaker</th>
-            <th>RSA Animate Video</th>
-            <th>Video Summary</th>
-        </tr>
-        <tr>
-            <td>
-                Ha-Joon Chang - Economics is for Everyone!
-            </td>
-            <td>
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/NdbbcO35arw?list=PL39BF9545D740ECFF" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                ‘Economics is for everyone’, argues legendary economist Ha-Joon Chang in our latest mind-blowing RSA Animate. Chang explains why every single person can and SHOULD get their head around basic economics. He pulls back the curtain on the often mystifying language of derivatives and quantitative easing, and explains how easily economic myths and assumptions become gospel.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Roman Krznaric - The Power of Outrospection
-            </td>
-            <td>
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/BG46IwVfSu8?list=PL39BF9545D740ECFF" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                Introspection is out, and outrospection is in. Philosopher and author Roman Krznaric explains how we can help drive social change by stepping outside ourselves
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Renata Salecl - The Paradox of Choice
-            </td>
-            <td>
-                <iframe width="600" height="350" src="https://www.youtube.com/embed/1bqMY82xzWo?list=PL39BF9545D740ECFF" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                Professor Renata Salecl explores the paralysing anxiety and dissatisfaction surrounding limitless choice. Does the freedom to be the architects of our own lives actually hinder rather than help us? Does our preoccupation with choosing and consuming actually obstruct social change?
-            </td>
-        </tr>
-    </table>
-
+        <h2 class="h2">RSA Animations</h2>
+        <table>
+            <tr>
+                <th>Title & Speaker</th>
+                <th>RSA Animate Videos</th>
+                <th>Video Summary</th>
+            </tr>
+            <tr>
+                <td>
+                    Ha-Joon Chang - Economics is for Everyone!
+                </td>
+                <td>
+                    <iframe width="600" height="350" src="https://www.youtube.com/embed/NdbbcO35arw?list=PL39BF9545D740ECFF" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>
+                    ‘Economics is for everyone’, argues legendary economist Ha-Joon Chang in our latest mind-blowing RSA Animate. Chang explains why every single person can and SHOULD get their head around basic economics. He pulls back the curtain on the often mystifying language of derivatives and quantitative easing, and explains how easily economic myths and assumptions become gospel.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Roman Krznaric - The Power of Outrospection
+                </td>
+                <td>
+                    <iframe width="600" height="350" src="https://www.youtube.com/embed/BG46IwVfSu8?list=PL39BF9545D740ECFF" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>
+                    Introspection is out, and outrospection is in. Philosopher and author Roman Krznaric explains how we can help drive social change by stepping outside ourselves
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Renata Salecl - The Paradox of Choice
+                </td>
+                <td>
+                    <iframe width="600" height="350" src="https://www.youtube.com/embed/1bqMY82xzWo?list=PL39BF9545D740ECFF" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+                <td>
+                    Professor Renata Salecl explores the paralysing anxiety and dissatisfaction surrounding limitless choice. Does the freedom to be the architects of our own lives actually hinder rather than help us? Does our preoccupation with choosing and consuming actually obstruct social change?
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>
+            <a href="/">&copy; Copyright 2020 - UNCO BACS 200 Website</a>
+        </p>
+    </footer>
 </body></html>
