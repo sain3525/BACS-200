@@ -8,30 +8,32 @@
 </head>
 
 <body>
+
     <header>
         <h1>Widmaier Saint-Julien Home Page</h1>
-        <div class="none">
-            <img src="https://unco.instructure.com/files/3383303/download?download_frd=1&verifier=G6AM8cRMY9YjukqDUhqduQAUiCTyM7FdwoffxgGR" width="128" alt="Profile Picture">
-        </div>
-        <nav>
-            <tr>
-                <th>My Home Page</th>
-                <th>My Github</th>
-                <th>My Canvas</th>
-            </tr>
-            <tr>
-                <td><a href="http://unco-sain.org/">
-                        unco-sain.org
-                    </a></td>
-                <td><a href="https://github.com/sain3525/BACS-200">
-                        sain3525/BACS-200
-                    </a></td>
-                <td><a href="https://www.unco.edu/canvas/">Canvas</a>
-                </td>
-            </tr>
+
+        <nav class="menu" role='navigation'>
+            <ol>
+                <li class="menu-item"><a href="..">Home</a></li>
+                <li class="menu-item" aria-haspopup="true">
+                    <a href="#0">My Projects</a>
+                    <ol class="sub-menu" aria-label="submenu">
+                        <li class="menu-item"><a href="https://unco-sain.org">WordPress Blog</a></li>
+                        <li class="menu-item"><a href="02/index.html">Inspire Me</a></li>
+                        <li class="menu-item"><a href="03/index.html">Amuse Me</a></li>
+                        <li class="menu-item"><a href="04/index.html">Development Skills</a></li>
+                        <li class="menu-item"><a href="05/index.html">Educate & Entertain</a></li>
+                        <li class="menu-item"><a href="06/index.html">Video & YouTube</a></li>
+                        <li class="menu-item"><a href="07/index.html">Cascading Stylesheets</a></li>
+                        <li class="menu-item"><a href="08/index.html">Page Structure</a></li>
+                        <li class="menu-item"><a href="09/index.html">Bootstrap</a></li>
+                    </ol>
+                </li>
+                <li class="menu-item"><a href="#0">My Github</a></li>
+                <li class="menu-item"><a href="#0">My Canvas</a></li>
+            </ol>
         </nav>
     </header>
-    
     <main>
         <h2 class="centered">My Projects</h2>
         <nav>
@@ -73,9 +75,11 @@
                 </li>
             </ul>
         </nav>
-
+<div class="none">
+        <img src="https://unco.instructure.com/files/3383303/download?download_frd=1&verifier=G6AM8cRMY9YjukqDUhqduQAUiCTyM7FdwoffxgGR" width="128" alt="Profile Picture">
+    </div>
     </main>
-    
+
     <footer>
         <p>
             <a href="/">&copy; Copyright 2020 - UNCO BACS 200 Website</a>
