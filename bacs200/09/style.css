@@ -1,0 +1,275 @@
+﻿html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'Basic-Sans', 'Lato', sans-serif;
+}
+
+.navbar {
+    padding: 1% 0 0;
+    padding-right: 20px;
+    position: relative;
+}
+
+.navbar-brand {
+    padding: 0%;
+    padding-left: 20px;
+    float: left;
+    height: 100%;
+    width: auto;
+}
+
+.ident {
+    width: 52px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/lmw-700.png);
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 125%;
+    color: #D5D5D5;
+    padding-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active {
+    color: #FFF;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        min-height: 42px;
+    }
+}
+
+.navbar-toggler:hover {
+    border-radius: 6px;
+    background-color: #D5D5D5;
+}
+
+.landing-text {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Filson-Pro', 'Lato', sans-serif;
+    display: table;
+    height: auto;
+    position: relative;
+    width: 100%;
+    color: #F8F1F1;
+}
+
+.landing-text h1 {
+    font-size: 500%;
+    font-weight: 700;
+}
+
+#fixed {
+    background: url(img/background.jpg) no-repeat center center fixed;
+}
+
+footer {
+    width: 100%;
+    background-color: inherit;
+    color: #23415c;
+    border-top: 1px solid #D5D5D5;
+    margin-top: 4em;
+    padding-top: 20px;
+}
+.btn {
+    background-color: #23415c;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color: #D5D5D5;
+    text-decoration: none;
+    border-color: #007bff;
+}
+
+.centered {
+    text-align: center;
+}
+
+.img {
+    border-radius: 50%;
+    float: right;
+    opacity: 75%;
+    padding-top: 15px;
+    margin-right: 10px;
+}
+.btn-outline-success {
+    color: #FFF;
+    border-color: #007bff;
+}
+
+/*--- iOS Landing Page Fix
+section {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 100%;
+ 	display: table;
+}
+.home-wrap {
+ 	clip: rect(0, auto, auto, 0);
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+}
+#home {
+	background-image: url('img/mountains.jpeg');
+ 	position: fixed;
+ 	display: table;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+	z-index: -1;
+}
+.landing-text {
+	z-index: 100;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+--*/
+
+/*--- iOS Fixed Image Fix
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
+}
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#fixed {
+	background-image: url('img/background.jpg');
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+}
+--*/
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+    
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+    background-size: cover;
+}
+
+.project {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.28), 
+      rgba(0, 0, 0, 0.28)
+    ),
+        url(img/terre-froide-community-2-1920x1280.jpg);
+}
+.donate {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.28), 
+      rgba(0, 0, 0, 0.28)
+    ),
+    
+        url(img/Donate.jpg);
+}
+
+.team {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.28), 
+      rgba(0, 0, 0, 0.28)
+    ),
+        url(img/team.jpg);
+}
+.project, .donate, .team {
+    background-size: cover;
+}
+
+img {
+    object-fit: cover;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+}
