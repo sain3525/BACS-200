@@ -13,8 +13,12 @@ body {
 .navbar-brand {
     max-height: 32px;
     padding: 0 15px 25px;
-    padding-left: 20px;
+    padding-left: 4px;
     color: #FFF;
+}
+
+.nav-img {
+    width: 40%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -45,12 +49,46 @@ body {
 }
 
 #home {
-    background: url(img/mountains.jpeg) no-repeat center center fixed;
+    background: url(images/download.png) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
     width: 100%;
     background-size: cover;
+    font-family: "Times New Roman", serif;
+    font-size: 105%;
+    display: 
+}
+
+#about {
+    background: url(images/aboutbackground.jpg) no-repeat center center fixed;
+    color:#FFF;
+    display: table-cell;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+p {
+    font-weight: bold;
+}
+main div img {
+    width:45%;
+    max-height: 55%;
+}
+
+main div h1 {
+    margin-top: 50px;
+}
+.shadow {
+    color: #23415c;
+  text-shadow: 2px 2px 4px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .landing-text {
@@ -64,10 +102,6 @@ body {
     font-weight: 700;
 }
 
-.padding img {
-    width: 100%;
-}
-
 #fixed {
     background: url(img/background.jpg) no-repeat center center fixed;
     display: table;
@@ -77,7 +111,7 @@ body {
     background-size: cover;
 }
 
-footer {
+.footer {
     width: 100%;
     background-color: inherit;
     color: #23415c;
@@ -86,6 +120,9 @@ footer {
     padding-top: 20px;
 }
 
+.padding {
+    padding: 0px 200px;
+}
 .fa {
     padding: 15px;
     font-size: 25px;
@@ -97,18 +134,16 @@ footer {
     text-decoration: none;
 }
 
-.icon {
-    max-width: 200px;
-}
-
 .btn {
-    background-color: #23415c;
-    text-decoration: none;
-
+    border: 2px solid #23415c;
+    color: #23415c;
+    padding-top: 5px;
+    border-radius: 20px
 }
 
 .btn:hover {
     background-color: #D5D5D5;
+    color: #23415c;
     text-decoration: none;
 }
 
@@ -117,7 +152,6 @@ footer {
 }
 
 .img {
-    border-radius: 50%;
     float: right;
     opacity: 75%;
     padding-top: 15px;
