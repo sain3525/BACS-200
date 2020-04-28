@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Bootstrap Landing Page Website Tutorial</title>
+    <title>Hope Alive Founders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -12,14 +13,14 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="scroll">
     <header>
-        <nav class="navbar navbar-light fixed-top navbar-expand-md" role="navigation">
+        <nav class="navbar navbar-light fixed-top navbar-expand-md">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="navbar-toggler-icon"></span>
-            </button> <a class="navbar-brand" href=""> <img src="images/logo-resized.png"></a>
+            </button> <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo.png"></a>
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item"><a href="about.html" class="active nav-link">About</a>
                     </li>
@@ -34,63 +35,30 @@
         </nav>
     </header>
 
-    <main id="about">
-        <div class="landing-text">
-            <h1>About</h1>
-            <img src="images/about-2.jpg" alt="about-2.jpg">
-            <h2 class="bold">Pastor Frank and Leslee Jacobs</h2>
-            <h3>Directors and Founding Missionaries</h3>
-        </div>
+    <div id="about">
+        <main class="main">
+            <div class="landing-text">
+                <h1>About Hope Alive</h1>
+                <p>Pastor Frank and Leslee first felt the call to the Haitian people in 1982. For 16 years they served on short trips to Haiti, became ham radio operators (to patch phone calls for missionaries), and worked with Haiti missions Stateside.</p>
+
+                <p>In 1998 the vision for Hope Alive Clinic was birthed, and the first medical facility was opened in Mariani, Haiti. In 2001, 2004, 2005, and 2009 Hope Alive opened four more clinics throughout Haiti. Three of the five clinics have since been successfully entrusted to their local communities. This enabled Hope Alive to better concentrate on our two clinics (Mariani and Tricon, which is near Les Cayes), and to open Solace Hospital for malnourished babies (2016).</p>
+
+                <p>In 2014 Frank and Leslee became full-time missionaries. They have three children and four grandchildren.</p>
+            </div>
+        </main>
+
         <div>
-            <p>Frank and Leslee first felt the call to the Haitian people in 1982. For 16 years they served on short trips to Haiti, became ham radio operators (to patch phone calls for missionaries), and worked with Haiti missions Stateside.</p>
-
-            <p>In 1998 the vision for Hope Alive Clinic was birthed, and the first medical facility was opened in Mariani, Haiti. In 2001, 2004, 2005, and 2009 Hope Alive opened four more clinics throughout Haiti. Three of the five clinics have since been successfully entrusted to their local communities. This enabled Hope Alive to better concentate on our two clinics (Mariani and Tricon, which is near Les Cayes), and to open Solace Hospital for malnourished babies (2016).</p>
-
-            <p>In 2014 Frank and Leslee became full-time missionaries. They have three children and four grandchildren.</p>
+            <a href="https://hopealivesolace.org/staff" class="btn-default btn-lg button">View Staff</a>
         </div>
-    </main>
 
-    <footer>
-        <div>
-            <a class="img" href="#top"><img src="images/arrow.png" width="40px" alt="Top"></a>
-        </div>
-        <p class="centered">© 2017-2020 Company, Inc. ·</p>
-    </footer>
-
-
-
-
-    <!--- iOS Landing Page Fix
-<section>
-	<div class="landing-text">
-		<h1>BOOTSTRAP</h1>
-		<h3>Learn the basic building blocks.</h3>
-		<a href="#" class="btn btn-default btn-lg">Get Started</a>
-	</div>
-	<div class="home-wrap">
-        <div id="home">
-		</div>
+        <footer class="footer shift2">
+            <div class="img">
+                <a class="icon" href="https://www.facebook.com/hopealiveclinicsministry/"><img src="images/facebook-icon.jpg" width="40" alt="facebook-icon.jpg"></a>
+                <a class="icon" href="https://www.youtube.com/playlist?list=PLhj_PpOIZWqR8QqLqvXlJW_enWQguRWoe"><img src="images/youtube-icon.png" width="40" alt="youtube-icon.png"></a>
+            </div>
+            <p class="shift"> &#64; 1998-2020 Hope Alive! Clinic Ministries · </p>
+        </footer>
     </div>
-</section>
--->
-
-    <!--- iOS Fixed Image Fix
-<figure>
-	<div class="fixed-wrap">
-        <div id="fixed">
-		</div>
-    </div>
-</figure>
--->
-
-
-
-
-
-
-
-
-
 
 </body>
 
