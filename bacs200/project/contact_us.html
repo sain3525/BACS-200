@@ -5,6 +5,7 @@
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <nav class="navbar navbar-light fixed-top navbar-expand-md">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="navbar-toggler-icon"></span>
+            <button type="button" class="navbar-toggler w3-hover-shadow" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="navbar-toggler-icon"></span>
             </button> <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo.png"></a>
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <ul class="nav navbar-nav ml-auto">
@@ -55,14 +56,12 @@
                         Phone: <a href="tel:16092343629">1-609-234-3629</a> |
                         <a href="tel:16099220802">1-609-922-0802</a>
                     </div>
-
                     <div class="find-widget">
                         Email: <a href="mailto:hopealivehaiti@yahoo.com">hopealivehaiti@yahoo.com</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <form class="shake" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-
                         <div class="form-group label-floating">
                             <label class="control-label" for="name">Name:</label>
                             <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
@@ -94,7 +93,7 @@
                         </div>
                         <!-- Form Submit -->
                         <div class="form-submit mt-5">
-                            <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Submit Message</button>
+                            <button class="btn btn-common btn-centered" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Submit Message</button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="clearfix"></div>
                         </div>
@@ -112,6 +111,18 @@
         <p class="shift"> &#169; 1998-2020 Hope Alive! Clinic Ministries &middot; </p>
     </footer>
 
-</body>
+    <script>
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
 
-</html>
+            $(".navbar-brand").css({
+                opacity: function() {
+                    var elementHeight = $(this).height(),
+                        opacity = (((elementHeight - scrollTop) / elementHeight) * 0.1) + 1;
+                    return opacity;
+                }
+            });
+        });
+    </script>
+
+</body></html>
