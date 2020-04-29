@@ -5,6 +5,7 @@
     <title>Bootstrap Landing Page Website Tutorial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <nav class="navbar navbar-light fixed-top navbar-expand-md">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="navbar-toggler-icon"></span>
+            <button type="button" class="navbar-toggler w3-hover-shadow" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="navbar-toggler-icon"></span>
             </button> <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo.png"></a>
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <ul class="nav navbar-nav ml-auto">
@@ -40,11 +41,8 @@
                 <h1>Solace &amp; Mom-Tot</h1>
                 <div class="container resized-2">
                     <p>Because of Hope Alive Clinic, many parents of malnourished children in Haiti are no longer desperate and heartbroken. They are not forced to give their children to orphanages or into child slavery. With your help, Hope Alive’s Mom Tot Program supports families to keep them TOGETHER.</p>
-
                     <p>Hope Alive Clinic’s Mother-Infant Nutrition Program-- or Mom-Tot Program -- has been nurturing malnourished babies since 1998. Every week caregivers bring their children to receive free nutrition, medical care, and parental education. Our outpatient facility for these babies, as well as patients of all ages, is still going strong.</p>
-
                     <p>Solace Hospital for Malnourished Children opened onsite June 15, 2016 with 24-hour nursing care. At Solace, each child is fed 4 or 5x and bathed 2 or 3x daily, given physical therapy, and hugged and loved back to good health. When they reach their goal weight, they RETURN HOME to their FAMILIES. For several months after their release, we walk alongside them, providing parental education, encouragement and FOOD in the outpatient Mom-Tot Program.</p>
-
                     <p>Will you help a child win his battle against malnutrition? A refrigerator magnet picture of your child with some information about him or her will be mailed to you. </p>
                 </div>
             </div>
@@ -58,4 +56,19 @@
             <p class="shift"> &#169; 1998-2020 Hope Alive! Clinic Ministries &middot; </p>
         </footer>
     </div>
+
+    <script>
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
+
+            $(".navbar-brand").css({
+                opacity: function() {
+                    var elementHeight = $(this).height(),
+                        opacity = (((elementHeight - scrollTop) / elementHeight) * 0.03) + 1;
+                    return opacity;
+                }
+            });
+        });
+    </script>
+
 </body></html>
