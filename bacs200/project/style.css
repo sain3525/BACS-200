@@ -12,12 +12,6 @@ body {
     padding: 0px 15%;
 }
 
-@media (max-width: 991px) {
-    main {
-        font-size: 80%;
-    }
-}
-
 .navbar {
     background-color: #23415c;
     padding: 1% 0;
@@ -34,13 +28,6 @@ nav img {
     width: 40%;
 }
 
-@media (max-width: 991px) {
-    nav img {
-        float: right;
-        margin-right: -30px
-    }
-}
-
 .navbar-light .navbar-nav .nav-link {
     color: #D5D5D5;
     padding-left: 10px;
@@ -53,21 +40,15 @@ nav img {
     border-radius: 100px;
 }
 
-@media (max-width: 991px) {
-    .navbar-brand {
-        min-height: 42px;
-    }
-}
-
 .navbar-toggler {
-    border: 1px white solid;
+    border: 2px white solid;
     margin-left: 8px;
-    float: right;
+    border-radius: 20%;
 }
 
 .navbar-toggler:hover {
     border-radius: 6px;
-    background-color: #D5D5D5;
+    background-color: #133049;
 }
 
 #home {
@@ -256,6 +237,71 @@ main div h1 {
     margin-right: 10px;
 }
 
+@media (max-width: 991px) {
+    .shift {
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-centered {
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 991px) {
+    nav img {
+        float: right;
+        margin-right: -30px;
+        width: 34%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        min-height: 42px;
+    }
+}
+
+@media (max-width: 991px) {
+    main {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 991px) {
+    .scroll {
+        overflow: visible;
+    }
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
 /*--- iOS Landing Page Fix
 section {
  	position: relative;
@@ -323,35 +369,3 @@ figure {
 	will-change: transform;
 }
 --*/
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-    margin: 5rem 0;
-    /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-
-    .featurette-heading {
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
-    }
-}
