@@ -5,6 +5,7 @@
     <title>Hope Alive Founders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -16,7 +17,7 @@
 <body class="scroll">
     <header>
         <nav class="navbar navbar-light fixed-top navbar-expand-md">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="navbar-toggler-icon"></span>
+            <button type="button" class="navbar-toggler w3-hover-shadow" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="navbar-toggler-icon"></span>
             </button> <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo.png"></a>
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <ul class="nav navbar-nav ml-auto">
@@ -40,9 +41,7 @@
             <div class="landing-text">
                 <h1>About Hope Alive</h1>
                 <p>Pastor Frank and Leslee first felt the call to the Haitian people in 1982. For 16 years they served on short trips to Haiti, became ham radio operators (to patch phone calls for missionaries), and worked with Haiti missions Stateside.</p>
-
                 <p>In 1998 the vision for Hope Alive Clinic was birthed, and the first medical facility was opened in Mariani, Haiti. In 2001, 2004, 2005, and 2009 Hope Alive opened four more clinics throughout Haiti. Three of the five clinics have since been successfully entrusted to their local communities. This enabled Hope Alive to better concentrate on our two clinics (Mariani and Tricon, which is near Les Cayes), and to open Solace Hospital for malnourished babies (2016).</p>
-
                 <p>In 2014 Frank and Leslee became full-time missionaries. They have three children and four grandchildren.</p>
             </div>
         </main>
@@ -59,7 +58,17 @@
             <p class="shift"> &#169; 1998-2020 Hope Alive! Clinic Ministries &middot; </p>
         </footer>
     </div>
+    <script>
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
 
-</body>
-
-</html>
+            $(".navbar-brand").css({
+                opacity: function() {
+                    var elementHeight = $(this).height(),
+                        opacity = (((elementHeight - scrollTop) / elementHeight) * 0.04) + 1;
+                    return opacity;
+                }
+            });
+        });
+    </script>
+</body></html>
